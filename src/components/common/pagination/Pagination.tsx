@@ -37,7 +37,7 @@ export const PaginationArrows: React.FC<PaginationArrowsProps> = ({
 
         {/* Thông tin trang hiện tại */}
         <span className="pagination-info">
-          Trang {currentPage} / {totalPages}
+          Page {currentPage} / {totalPages}
         </span>
 
         {/* Nút Next */}
@@ -112,7 +112,7 @@ export const PaginationNumbers: React.FC<PaginationArrowsProps> = ({ // dùng l�
             tabIndex={currentPage === 1 ? -1 : undefined}
             aria-label="Trang trước"
           >
-            Trước
+            Previous
           </a>
         </li>
 
@@ -149,7 +149,7 @@ export const PaginationNumbers: React.FC<PaginationArrowsProps> = ({ // dùng l�
             tabIndex={currentPage === totalPages ? -1 : undefined}
             aria-label="Trang sau"
           >
-            Sau
+            Next
           </a>
         </li>
       </ul>

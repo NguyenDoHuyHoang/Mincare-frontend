@@ -1,12 +1,12 @@
 // src/components/TeamSection/TeamSection.tsx
 import React from "react";
 import type { Book } from "../../data/Types";
-import {PaginationArrows} from "../common/pagination/Pagination";
+import { PaginationArrows } from "../common/pagination/Pagination";
 import { usePagination } from "../../utilis/usePagination";
 import Items from "../common/itemList/ItemList";
 import "../../assets/css/styles.css";
 import { useNavigate } from "react-router-dom";
-import { useShoppingCart } from "../../utilis/cart/useCart"; 
+import { useShoppingCart } from "../../utilis/cart/useCart";
 import { showNotification } from "../../utilis/Notification";
 
 interface BookSectionProps {
@@ -14,19 +14,29 @@ interface BookSectionProps {
   itemsPerPage?: number;
 }
 
-const BookSection: React.FC<BookSectionProps> = ({ books, itemsPerPage = 6 }) => {
-  const { items: currentBooks, currentPage, totalPages, goToPage } = usePagination(books, itemsPerPage);
+const BookSection: React.FC<BookSectionProps> = ({
+  books,
+  itemsPerPage = 6,
+}) => {
+  const {
+    items: currentBooks,
+    currentPage,
+    totalPages,
+    goToPage,
+  } = usePagination(books, itemsPerPage);
   const navigate = useNavigate();
   const { addItem } = useShoppingCart(); // ← cùng context với Header và CartSidebar
 
   function getStars(rating: number) {
     return Array.from({ length: 5 }, (_, i) =>
-      i < rating
-        ? <i key={i} className="fas fa-star" />
-        : <i key={i} className="far fa-star" />
+      i < rating ? (
+        <i key={i} className="fas fa-star" />
+      ) : (
+        <i key={i} className="far fa-star" />
+      ),
     );
   }
- 
+
   /**
    * Thêm sách vào giỏ:
    * - addItem tự động mở CartSidebar qua context (setIsCartOpen(true))
@@ -66,26 +76,36 @@ const BookSection: React.FC<BookSectionProps> = ({ books, itemsPerPage = 6 }) =>
                 <div className="book-header">
                   <div className="book-rating">{getStars(book.rating)}</div>
                   <div className="book-price">
-                    <span className="original-price">${book.originalPrice}.00</span>
+                    <span className="original-price">
+                      ${book.originalPrice}.00
+                    </span>
                     <span className="discounted-price">${book.price}.00</span>
                   </div>
                 </div>
                 <h4 className="book-name">{book.name}</h4>
                 <p className="book-description">{book.description}</p>
                 <p className="book-meta">
-                  <span><i className="fas fa-book" /> {book.pages} Pages</span>
+                  <span>
+                    <i className="fas fa-book" /> {book.pages} Pages
+                  </span>
                 </p>
-                <span className="book-btn" onClick={() => handleAddToCart(book)}>
+                <span
+                  className="book-btn"
+                  onClick={() => handleAddToCart(book)}
+                >
                   Buy Now
                 </span>
               </div>
             </div>
-            
           )}
         />
 
         {totalPages > 1 && (
-          <PaginationArrows currentPage={currentPage} totalPages={totalPages} onPageChange={goToPage} />
+          <PaginationArrows
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={goToPage}
+          />
         )}
       </div>
     </section>
