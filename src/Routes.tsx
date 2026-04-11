@@ -16,7 +16,7 @@ import BookDetail from "./components/shoping/ProductDetail/BookDetail";
 import CourseDetail from "./components/shoping/ProductDetail/CourseDetail";
 import Login from "./pages/Login/Login";
 import ForgotPassword from "./pages/Login/ForgotPassWordPage";
-
+import UserProfile from "./pages/UserProfile/UserProfile";
 
 export default function Routes() {
   const router = createBrowserRouter([
@@ -67,15 +67,19 @@ export default function Routes() {
         { path: "coach/:id", element: <CoachDetail /> },
         {
           path: "contact",
-          element: <Contact/>
+          element: <Contact />,
         },
         {
           path: "login",
-          element: <Login/>
+          element: <Login />,
         },
         {
           path: "forgotPassword",
-          element: <ForgotPassword/>
+          element: <ForgotPassword />,
+        },
+        {
+          path: "profile",
+          element: <UserProfile />,
         },
       ],
     },
