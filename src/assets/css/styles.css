@@ -6,6 +6,7 @@
 
 :root {
     --brand-green: #2E8B57;
+    --btn-green: #10b981;
     /* Sea Green for books */
 
     --sale-red: #DC143C;
@@ -972,8 +973,8 @@ body {
     display: block;
     width: 100%;
     padding: 12px;
-    background: #E8E8E8;
-    color: #333;
+    background: var(--btn-green);
+    color: #fff;
     text-align: center;
     text-decoration: none;
     border-radius: 25px;
@@ -1613,7 +1614,7 @@ footer span {
     display: block;
     width: 100%;
     padding: 12px;
-    background: #10b981;
+    background: var(--btn-green);
     color: white;
     text-align: center;
     text-decoration: none;

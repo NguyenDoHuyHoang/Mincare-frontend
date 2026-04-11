@@ -9,9 +9,12 @@ import { showNotification } from "../../utilis/Notification";
 
 type productProps = Book | Course ;
 
-const ProductCard = ({ id, name, price, originalPrice, image }: productProps) => {
+const ProductCard = ({ id, name, price, originalPrice, image, ...rest }: productProps) => {
   const discount: number = (1 - price / originalPrice) * 100;
   console.log(discount);
+
+    // We distinguish by presence of 'pages' field (Book-only) vs 'duration' (Course-only)
+  const detailPath = "pages" in rest ? `/books/${id}` : `/courses/${id}`;
 
   const { addItem } = useShoppingCart(); // ← cùng context với Header và CartSidebar
 
@@ -31,7 +34,7 @@ const ProductCard = ({ id, name, price, originalPrice, image }: productProps) =>
 
   return (
     <>
-      <Link to={`/book/${id}`} className="product-card-link">
+      <Link to={detailPath} className="product-card-link">
         <div className="product-card">
           <div className="product-image">
             <img src={image} alt={name} />

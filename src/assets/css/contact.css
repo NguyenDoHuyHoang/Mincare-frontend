@@ -222,7 +222,7 @@ contactForm input{
 
 .faq-item {
     background: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 16px;
     margin-bottom: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -231,16 +231,16 @@ contactForm input{
     font-size: 25px;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .faq-item p {
     font-size: 20px;
     line-height: 1.6;
-    color: #fff;
-    margin-top: 15px;
+    color: #fff !important; 
+    margin-top: 15px !important;
     background-color: #10b981;
-    padding: 12px;
+    padding: 12px !important; 
     border-radius: 15px;
 }
 
@@ -252,6 +252,7 @@ contactForm input{
     align-items: center;
     margin-bottom: 0;
     transition: color 0.3s ease;
+    border-radius: 15px; /**/
 }
 .faq-icon {
     transition: transform 0.3s ease;

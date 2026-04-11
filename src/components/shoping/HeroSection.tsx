@@ -37,10 +37,10 @@ const HeroSection = () => {
             />
             <div className="carousel-overlay" />
             <div className="carousel-caption">
-              <h2>Sách</h2>
-              <p>Sách bán chạy</p>
-              <Link to="" className="hero-btn">
-                Xem Ngay
+              <h2>Books</h2>
+              <p>Treanding Books</p>
+              <Link to="/books" className="hero-btn">
+                Watch Now
               </Link>
             </div>
           </div>
@@ -52,10 +52,10 @@ const HeroSection = () => {
             />
             <div className="carousel-overlay" />
             <div className="carousel-caption d-none d-md-block">
-              <h2>Khóa Học</h2>
-              <p>Khóa học bán chạy</p>
-              <Link to="" className="hero-btn">
-                Xem Ngay
+              <h2>Courses</h2>
+              <p>Trending Courses</p>
+              <Link to="/courses" className="hero-btn">
+                Watch Now
               </Link>
             </div>
           </div>

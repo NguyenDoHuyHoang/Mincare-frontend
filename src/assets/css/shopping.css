@@ -209,8 +209,8 @@ body {
 
 .add-to-cart-btn {
     width: 100%;
-    background: var(--brand-green);
-    color: white;
+    background: var(--btn-green);
+    color: #fff;
     border: none;
     padding: 12px 20px;
     border-radius: 25px;
@@ -277,8 +277,8 @@ body {
 
 .submit-btn {
     width: 100%;
-    background: var(--brand-green);
-    color: white;
+    background: var(--btn-green);
+    color: #fff;
     border: none;
     padding: 15px 30px;
     border-radius: 25px;

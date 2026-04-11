@@ -45,13 +45,13 @@ type Images = {
   guarantee: string;
 };
 export const images: Images = {
-  team:{ member1, member2, member3, member4, member5 },
-  aboutus:{picture, video},
-  books:{book1,book2,book3},
-  hero:{h1,h2,h3},
-  login:{l1,l2,l3},
-  logo:{lo1,lo2,LoginLogo,white},
-  method:{m1,m2,m3},
+  team: { member1, member2, member3, member4, member5 },
+  aboutus: { picture, video },
+  books: { book1, book2, book3 },
+  hero: { h1, h2, h3 },
+  login: { l1, l2, l3 },
+  logo: { lo1, lo2, LoginLogo, white },
+  method: { m1, m2, m3 },
   discount,
   guarantee
 };

@@ -2,78 +2,76 @@ import { images } from "../assets/images";
 import type { Testimonial } from "./Types";
 
 export const testimonials: Testimonial[] = [
-
     {
         id: 1,
-        name: "Khách Hàng A",
+        name: "Sarah M.",
         avatar: images.hero.h1,
-        content: "Sau 3 tháng, tôi đã giảm 15kg và cảm thấy khỏe mạnh hơn bao giờ hết!"
+        content: "After 3 months of coaching, I lost 15kg and feel healthier than I ever have. The personalized plan made all the difference."
     },
     {
         id: 2,
-        name: "Khách Hàng B",
+        name: "James T.",
         avatar: images.hero.h2,
-        content: "Đội ngũ rất chuyên nghiệp và luôn hỗ trợ tôi trong quá trình thay đổi."
+        content: "The team is incredibly professional and supported me every step of the way through my transformation journey."
     },
     {
         id: 3,
-        name: "Khách Hàng C",
+        name: "Linda K.",
         avatar: images.hero.h3,
-        content: "Không chỉ về thể hình, mà còn cảm thấy tự tin hơn trong cuộc sống."
+        content: "It wasn't just about my fitness — I found a new level of confidence in every area of my life."
     },
     {
         id: 4,
-        name: "Khách Hàng D",
+        name: "Michael R.",
         avatar: images.team.member1,
-        content: "Kế hoạch được tùy chỉnh riêng cho tôi, điều này là điểm khác biệt lớn nhất."
+        content: "The fully customized plan was what set this apart from everything else I had tried before."
     },
     {
         id: 5,
-        name: "Khách Hàng E",
+        name: "Emily W.",
         avatar: images.team.member2,
-        content: "Tôi đã học được cách duy trì lối sống lành mạnh và bền vững."
+        content: "I learned how to maintain a healthy, sustainable lifestyle — not just a short-term fix."
     },
     {
         id: 6,
-        name: "Khách Hàng F",
+        name: "David L.",
         avatar: images.team.member3,
-        content: "Cộng đồng hỗ trợ đã giúp tôi vượt qua những lúc khó khăn."
+        content: "The support community helped me push through the tough moments. I never felt alone in the process."
     },
     {
         id: 7,
-        name: "Khách Hàng G",
+        name: "Jessica P.",
         avatar: images.team.member4,
-        content: "Tôi rất hài lòng với sự tiến bộ của mình sau khóa học coaching."
+        content: "I am genuinely proud of how far I have come. The coaching program exceeded every expectation I had."
     },
     {
         id: 8,
-        name: "Khách Hàng H",
+        name: "Chris N.",
         avatar: images.team.member5,
-        content: "Dịch vụ tuyệt vời! Đội ngũ hỗ trợ nhiệt tình 24/7."
+        content: "Outstanding service — the support team is responsive and genuinely invested in your success."
     },
     {
         id: 9,
-        name: "Khách Hàng I",
+        name: "Amanda F.",
         avatar: images.team.member1,
-        content: "Tôi đã tìm được sự cân bằng trong cuộc sống nhờ MindCare."
+        content: "MindCare helped me find real balance in my life. I feel grounded in a way I haven't in years."
     },
     {
         id: 10,
-        name: "Khách Hàng J",
+        name: "Robert H.",
         avatar: images.team.member2,
-        content: "Những khóa học ở đây thực sự thay đổi cách tôi nhìn nhận cuộc sống."
+        content: "The courses here genuinely changed the way I see myself and the world around me."
     },
     {
         id: 11,
-        name: "Khách Hàng K",
+        name: "Natalie B.",
         avatar: images.team.member3,
-        content: "Cảm ơn MindCare đã giúp tôi khám phá tiềm năng bản thân."
+        content: "Thank you MindCare for helping me discover what I am truly capable of."
     },
     {
         id: 12,
-        name: "Khách Hàng L",
+        name: "Daniel C.",
         avatar: images.team.member4,
-        content: "Môi trường học tập tuyệt vời, giáo viên nhiệt tình."
+        content: "A wonderful learning environment with passionate, dedicated coaches who truly care about your growth."
     }
-
 ];

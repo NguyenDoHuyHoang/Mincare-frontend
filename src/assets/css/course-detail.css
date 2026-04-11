@@ -1,10 +1,5 @@
 /* Course Detail Page Styles */
-.header-top {
-    background-color: #2E8B57;
-}
-.header-top.scrolled {
-    background-color: #2E8B57;
-}
+
 .breadcrumb-section {
     padding: 20px 0;
     background-color: #f8f9fa;
@@ -250,7 +245,7 @@
     flex-wrap: wrap;
 }
 
-.add-to-cart-btn {
+.add-to-cart-btn-v2 {
     padding: 15px 30px;
     border: none;
     border-radius: 8px;

@@ -3,10 +3,10 @@ import React from "react";
 import "../../../assets/css/styles.css";
 
 interface PaginationArrowsProps {
-  currentPage: number;                      // Trang đang xem (bắt đầu từ 1)
-  totalPages: number;                       // Tổng số trang
-  onPageChange: (page: number) => void;     // Callback khi người dùng chọn trang
-  className?: string;                       // Class CSS tuỳ chọn từ bên ngoài truyền vào
+  currentPage: number; // Trang đang xem (bắt đầu từ 1)
+  totalPages: number; // Tổng số trang
+  onPageChange: (page: number) => void; // Callback khi người dùng chọn trang
+  className?: string; // Class CSS tuỳ chọn từ bên ngoài truyền vào
 }
 
 /**
@@ -68,7 +68,8 @@ export const PaginationArrows: React.FC<PaginationArrowsProps> = ({
  *     onPageChange={goToPage}
  *   />
  */
-export const PaginationNumbers: React.FC<PaginationArrowsProps> = ({ // dùng lại interface của arrow
+export const PaginationNumbers: React.FC<PaginationArrowsProps> = ({
+  // dùng lại interface của arrow
   currentPage,
   totalPages,
   onPageChange,
@@ -96,7 +97,10 @@ export const PaginationNumbers: React.FC<PaginationArrowsProps> = ({ // dùng l�
 
   return (
     // aria-label giúp screen reader đọc đúng vùng điều hướng
-    <nav aria-label="Pagination" className={className}>
+    <nav
+      aria-label="Pagination"
+      className={`pagination-container ${className}`}
+    >
       {/* Bootstrap pagination: ul > li.page-item > a.page-link */}
       <ul className="pagination">
         {/* ── Nút TRƯỚC ─────────────────────────────────────────── */}
@@ -156,5 +160,3 @@ export const PaginationNumbers: React.FC<PaginationArrowsProps> = ({ // dùng l�
     </nav>
   );
 };
-
-

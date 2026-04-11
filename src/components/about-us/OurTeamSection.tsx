@@ -30,8 +30,8 @@ const OurTeamSection: React.FC<TeamProps> = ({
                   <h3>{team.name}</h3>
                   <p>{team.role}</p>
                   <ul className="team-member-skills">
-                    {team.skills?.map((skill, idx) => (
-                      <li key={idx}>{skill}</li>
+                    {team.specialties?.map((specialties, idx) => (
+                      <li key={idx}>{specialties.label}</li>
                     ))}
                   </ul>
                 </div>

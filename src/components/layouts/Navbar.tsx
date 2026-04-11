@@ -80,8 +80,8 @@ const Header: React.FC = () => {
                     Shop <i className="fas fa-chevron-down" />
                   </Link>
                   <ul className="sub-menu">
-                    <li><NavLink to="/ShoppingBook" onClick={handleRegularLinkClick}>Books</NavLink></li>
-                    <li><NavLink to="/ShoppingCourse" onClick={handleRegularLinkClick}>E-Learning</NavLink></li>
+                    <li><NavLink to="/books" onClick={handleRegularLinkClick}>Books</NavLink></li>
+                    <li><NavLink to="/courses" onClick={handleRegularLinkClick}>E-Learning</NavLink></li>
                   </ul>
                 </li>
                 <li><NavLink to="/blog" onClick={handleRegularLinkClick}>Blog</NavLink></li>
